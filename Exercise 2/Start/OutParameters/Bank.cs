@@ -1,13 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace OutParameters
 {
-	public class Bank
-	{
-		// TODO: add GetAccountInfo method, should
-		// take an accountNumber (string), 
-		// an out parameter balance (double) 
-		// an out parameter lastDeposit (DateTime)
-		// and return a boolean.
-	}
+    public class Bank
+    {
+        // TODO: Create GetAccountInfo method with the following specs:
+        // Parameters:
+        //   - accountNumber (string)
+        //   - balance (double) ***
+        //   - lastDeposit (DateTime) ***
+        // Return type:
+        //   - bool
+
+        //Note: Parameters with *** should be defined as out parameters
+    }
 }

@@ -1,18 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace OutParameters
 {
-	public class Bank
-	{
-		public bool GetAccountInfo(string accountNumber, out double balance, out DateTime lastDeposit)
-		{
-			// pretend there's code to look up account based on accountNumber
+    public class Bank
+    {
+        // TODO: Create GetAccountInfo method with the following specs:
+        // Parameters:
+        //   - accountNumber (string)
+        //   - balance (double) ***
+        //   - lastDeposit (DateTime) ***
+        // Return type:
+        //   - bool
 
-			balance = 24127.84;
-			lastDeposit = new DateTime(2014, 11, 22, 14, 35, 20);
+        //Note: Parameters with *** should be defined as out parameters
 
-			bool isActive = true;
-			return isActive;
-		}
-	}
+
+        public bool GetAccountInfo(string accountNumber, out double balance, out DateTime lastDeposit)
+        {
+            // In this example accountNumber is not used
+
+            balance = 24127.84;
+            lastDeposit = new DateTime(2014, 11, 22, 14, 35, 20);
+
+            bool isActive = true;
+            return isActive;
+        }
+    }
 }

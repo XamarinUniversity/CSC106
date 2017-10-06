@@ -1,4 +1,10 @@
-﻿namespace BankAccount
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BankAccount
 {
     public class BankAccount
     {
@@ -22,7 +28,7 @@
             // Can't overdraft
             if (AmountOfMoney < amountToWithdraw)
                 return false;
-            
+
             AmountOfMoney -= amountToWithdraw;
             return true;
         }
